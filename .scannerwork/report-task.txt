@@ -1,0 +1,6 @@
+projectKey=wom-tmf-test
+serverUrl=http://localhost:9000
+serverVersion=8.7.0.41497
+dashboardUrl=http://localhost:9000/dashboard?id=wom-tmf-test
+ceTaskId=AXgOgYl-d3kIS5fY_nlU
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXgOgYl-d3kIS5fY_nlU
