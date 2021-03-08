@@ -48,7 +48,7 @@ const welcomePost = (req, res) => {
             tenant_baseType:resp.data.tenant['@baseType'],
             tenant_schemaLocation:resp.data.tenant['@schemaLocation'],
             tenant_type:resp.data.tenant['@type'],
-            tenant_id:resp.data.tenant.id
+            tenant:resp.data.tenant.id
         });
 
         
