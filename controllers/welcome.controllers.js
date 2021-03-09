@@ -55,7 +55,7 @@ const welcomePost = (req, res) => {
         }
         
         //resp original
-        res.json({
+        res.json(
             respuesta
             //sn,
             //rating:ratingType,
@@ -64,7 +64,7 @@ const welcomePost = (req, res) => {
             // tenant_schemaLocation:resp.data.tenant['@schemaLocation'],
             // tenant_type:resp.data.tenant['@type'],
             // tenant:resp.data.tenant.id
-        });
+        );
         
     })
     .catch((error) => {
