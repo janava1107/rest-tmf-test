@@ -55,12 +55,12 @@ const welcomePost = (req, res) => {
         //resp original
         res.json({
             sn,
-            rating:ratingType,
-            status:status,
-            //tenant_baseType:baseType,
-            tenant_schemaLocation:resp.data.tenant['@schemaLocation'],
-            tenant_type:resp.data.tenant['@type'],
-            tenant:resp.data.tenant.id
+            // rating:ratingType,
+            // status:status,
+            // tenant_baseType:baseType,
+            // tenant_schemaLocation:resp.data.tenant['@schemaLocation'],
+            // tenant_type:resp.data.tenant['@type'],
+            // tenant:resp.data.tenant.id
         });
         
     })
