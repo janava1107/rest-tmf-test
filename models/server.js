@@ -6,8 +6,9 @@ class Server {
         this.app = express();
         this.port = process.env.PORT;
         //path endpoint
-        this.authPath       = '/bff/auth'
+        //this.authPath       = '/bff/auth'
         this.welcomePath    = '/bff/welcome';
+        this.consultaconsumoPath    = '/bff/consultaconsumo';
         //middlewares
         this.middlewares();
 
@@ -23,8 +24,9 @@ class Server {
     }
 
     routes(){
-        this.app.use(this.authPath,require ('../routes/auth.routes'));
+        //this.app.use(this.authPath,require ('../routes/auth.routes'));
         this.app.use(this.welcomePath,require ('../routes/welcome.routes'));
+        this.app.use(this.consultaconsumoPath,require ('../routes/consultaconsumo.routes'));
     }
 
     listen(){
