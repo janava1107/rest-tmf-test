@@ -36,7 +36,7 @@ const welcomePost = (req, res) => {
         res.json({
             sn,
             //rating:resp.data.ratingType,
-            tipo,
+            rating:tipo,
             status:resp.data.status,
             tenant_baseType:resp.data.tenant['@baseType'],
             tenant_schemaLocation:resp.data.tenant['@schemaLocation'],
