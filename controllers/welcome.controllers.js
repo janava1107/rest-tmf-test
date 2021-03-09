@@ -41,7 +41,7 @@ const welcomePost = (req, res) => {
                 var baseType=resp.data.tenant['@baseType'];
             break;
             case 'pre':
-                respuesta={
+                var respuesta={
                     ratingType:'Hybrid';
                     status:resp.data.status;
                     baseType:resp.data.tenant['@baseType'];
