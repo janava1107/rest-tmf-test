@@ -42,9 +42,9 @@ const welcomePost = (req, res) => {
             break;
             case 'pre':
                 var respuesta={
-                    ratingType:'Hybrid';
-                    status:resp.data.status;
-                    baseType:resp.data.tenant['@baseType'];
+                    ratingType:'Hybrid',
+                    status:resp.data.status,
+                    baseType:resp.data.tenant['@baseType']
                 }
             break;
             case 'post':
