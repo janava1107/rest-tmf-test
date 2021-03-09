@@ -55,7 +55,7 @@ const welcomePost = (req, res) => {
         //resp original
         res.json({
             sn,
-            // rating:ratingType,
+             rating:'Hybrid',
             // status:status,
             // tenant_baseType:baseType,
             // tenant_schemaLocation:resp.data.tenant['@schemaLocation'],
