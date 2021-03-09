@@ -41,9 +41,11 @@ const welcomePost = (req, res) => {
                 var baseType=resp.data.tenant['@baseType'];
             break;
             case 'pre':
-                var ratingType='Prepay';
-                var status=resp.data.status;
-                var baseType=resp.data.tenant['@baseType'];
+                respuesta={
+                    ratingType:'Hybrid';
+                    status:resp.data.status;
+                    baseType:resp.data.tenant['@baseType'];
+                }
             break;
             case 'post':
                 var ratingType='Postpay';
@@ -54,8 +56,9 @@ const welcomePost = (req, res) => {
         
         //resp original
         res.json({
+            respuesta
             //sn,
-             rating:ratingType,
+            //rating:ratingType,
             // status:status,
             // tenant_baseType:baseType,
             // tenant_schemaLocation:resp.data.tenant['@schemaLocation'],
