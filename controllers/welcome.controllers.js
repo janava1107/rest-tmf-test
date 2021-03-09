@@ -57,7 +57,7 @@ const welcomePost = (req, res) => {
             sn,
             rating:ratingType,
             status:status,
-            tenant_baseType:baseType,
+            //tenant_baseType:baseType,
             tenant_schemaLocation:resp.data.tenant['@schemaLocation'],
             tenant_type:resp.data.tenant['@type'],
             tenant:resp.data.tenant.id
