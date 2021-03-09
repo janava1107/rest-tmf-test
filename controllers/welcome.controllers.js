@@ -32,11 +32,12 @@ const welcomePost = (req, res) => {
     
     axios.get('https://2c7b355e-3990-42fb-994b-e34ad6bb1887.mock.pstmn.io/product/?serviceNumber='+sn).then(resp=> {
         
+        let valor_tipo= tipo;
         //resp original
         res.json({
-            sn,
+            //sn,
             //rating:resp.data.ratingType,
-            rating:tipo,
+            rating:valor_tipo,
             status:resp.data.status,
             tenant_baseType:resp.data.tenant['@baseType'],
             tenant_schemaLocation:resp.data.tenant['@schemaLocation'],
