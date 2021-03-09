@@ -1,29 +1,19 @@
 const axios = require('axios');
 
-const consultaconsumoGet = (req, res) => {
-    console.log('consultaconsumoget')
+const consultaboletacicloGet = (req, res) => {
+    console.log('consultaboletacicloget')
     
     const {sn,ert} = req.query;
-    axios.get('https://2c7b355e-3990-42fb-994b-e34ad6bb1887.mock.pstmn.io/usageConsumptionReport/?serviceNumber='+sn).then(resp=> {
+    axios.get('https://2c7b355e-3990-42fb-994b-e34ad6bb1887.mock.pstmn.io//usageConsumptionReport/?serviceNumber='+sn).then(resp=> {
         res.json({
+            //msg: 'endpoint post',
             sn,
-            //objeto bucket
-            bucket_type:resp.data.bucket[0]['@type'],
-            bucket_name:resp.data.bucket[0].name,
-            bucket_initialBalance:resp.data.bucket[0].intitalBalance,
-            bucket_isUnlimited:resp.data.bucket[0].isUnlimited,
-            bucket_usageType:resp.data.bucket[0].usageType,
-            
-            //objeto bucket->bucketBalance
-            bucketBalance_remainingBalanceName:resp.data.bucket[0].bucketBalance[0].remainingValueName,
-            bucketBalance_remainingBalanceAmount:resp.data.bucket[0].bucketBalance[0].remainingValue.amount,
-            
-            //objeto tenant
-            tenant_baseType:resp.data.tenant['@baseType'],
-            tenant_schemaLocation:resp.data.tenant['@schemaLocation'],
-            tenant_type:resp.data.tenant['@type'],
-            tenant_id:resp.data.tenant.id
+            //canal,
+            rating:resp.data.ratingType,
+            status:resp.data.status,
+            tenant:resp.data.tenant.id
         });
+
         
         
     })
@@ -35,8 +25,8 @@ const consultaconsumoGet = (req, res) => {
     })
 }
 
-const consultaconsumoPost = (req, res) => {
-    console.log('consultaconsumopost');
+const consultaboletacicloPost = (req, res) => {
+    console.log('consultaboletaciclopost');
     const {sn,ert} = req.body;
     axios.get('https://2c7b355e-3990-42fb-994b-e34ad6bb1887.mock.pstmn.io/usageConsumptionReport/?serviceNumber='+sn).then(resp=> {
         //console.log(resp.data);
@@ -59,6 +49,8 @@ const consultaconsumoPost = (req, res) => {
             tenant_type:resp.data.tenant['@type'],
             tenant_id:resp.data.tenant.id
         });
+
+        
         
     })
     .catch((error) => {
@@ -71,4 +63,4 @@ const consultaconsumoPost = (req, res) => {
     
 }
 
-module.exports = {consultaconsumoGet,consultaconsumoPost};
+module.exports = {consultaboletacicloGet,consultaboletacicloPost};

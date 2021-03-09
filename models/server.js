@@ -9,6 +9,7 @@ class Server {
         //this.authPath       = '/bff/auth'
         this.welcomePath    = '/bff/welcome';
         this.consultaconsumoPath    = '/bff/consultaconsumo';
+        this.consultaboletacicloPath    = '/bff/consultaboletaciclo';
         //middlewares
         this.middlewares();
 
@@ -27,6 +28,7 @@ class Server {
         //this.app.use(this.authPath,require ('../routes/auth.routes'));
         this.app.use(this.welcomePath,require ('../routes/welcome.routes'));
         this.app.use(this.consultaconsumoPath,require ('../routes/consultaconsumo.routes'));
+        this.app.use(this.consultaboletacicloPath,require ('../routes/consultaboletaciclo.routes'));
     }
 
     listen(){
