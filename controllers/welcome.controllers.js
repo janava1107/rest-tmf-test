@@ -28,14 +28,15 @@ const welcomeGet = (req, res) => {
 
 const welcomePost = (req, res) => {
     console.log('welcomepost');
-    const {sn,canal} = req.body;
+    const {sn,tipo} = req.body;
     
     axios.get('https://2c7b355e-3990-42fb-994b-e34ad6bb1887.mock.pstmn.io/product/?serviceNumber='+sn).then(resp=> {
         
         //resp original
         res.json({
             sn,
-            rating:resp.data.ratingType,
+            //rating:resp.data.ratingType,
+            tipo,
             status:resp.data.status,
             tenant_baseType:resp.data.tenant['@baseType'],
             tenant_schemaLocation:resp.data.tenant['@schemaLocation'],
