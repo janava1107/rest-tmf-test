@@ -29,6 +29,7 @@ class Server {
         this.app.use(this.welcomePath,require ('../routes/welcome.routes'));
         this.app.use(this.consultaconsumoPath,require ('../routes/consultaconsumo.routes'));
         this.app.use(this.consultaboletacicloPath,require ('../routes/consultaboletaciclo.routes'));
+    
     }
 
     listen(){
