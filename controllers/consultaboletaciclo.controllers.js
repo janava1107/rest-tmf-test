@@ -31,10 +31,10 @@ const consultaboletacicloPost = (req, res) => {
         //console.log(resp.data);
         res.json({
             sn,
-            amountDue:resp.data.amountDue,
+            amountDue:resp.data.amountDue.replace("CLP",""),
             billDate:logical.getTimestamptoDayMonth(resp.data.billDate),
             paymentDueDate:logical.getTimestamptoDayMonth(resp.data.paymentDueDate),
-            remainingAmount:resp.data.remainingAmount,
+            remainingAmount:resp.data.remainingAmount.replace("CLP",""),
             //objeto billCycle
             billcycle_name:resp.data.billCycle.name,
             //objeto billDocument
