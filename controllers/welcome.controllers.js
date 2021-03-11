@@ -29,8 +29,75 @@ const welcomeGet = (req, res) => {
 const welcomePost = (req, res) => {
     console.log('welcomepost');
     const {sn,tipo} = req.body;
+
+    switch(sn){
+        case '56999999999':
+            res.json(
+                {
+                    "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
+                    "status": "active",
+                    "rating": "Hybrid",
+                    "tenant_type": "WOMTenantRefOrValue",
+                    "tenant_baseType": null,
+                    "tenant": "WOM-Chile"
+                }
+            )
+            break;
+
+        case '56888888888':
+            res.json(
+                {
+                    "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
+                    "status": "active",
+                    "rating": "Prepaid",
+                    "tenant_type": "WOMTenantRefOrValue",
+                    "tenant_baseType": null,
+                    "tenant": "WOM-Chile"
+                }
+            )
+            break;
+        
+        case '56777777777':
+            res.json(
+                {
+                    "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
+                    "status": "active",
+                    "rating": "Postpaid",
+                    "tenant_type": "WOMTenantRefOrValue",
+                    "tenant_baseType": null,
+                    "tenant": "WOM-Chile"
+                }
+            )
+            break; 
+        
+        case '56666666666':
+            res.json(
+                {
+                    "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
+                    "status": "inactive",
+                    "rating": "",
+                    "tenant_type": "",
+                    "tenant_baseType": "",
+                    "tenant": ""
+                }
+            )
+            break;    
+
+        default:    
+            res.json(
+                {
+                    "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
+                    "status": "inactive",
+                    "rating": "",
+                    "tenant_type": "",
+                    "tenant_baseType": "",
+                    "tenant": ""
+                }
+            )
+    }
+
     
-    axios.get('https://2c7b355e-3990-42fb-994b-e34ad6bb1887.mock.pstmn.io/product/?serviceNumber='+sn).then(resp=> {
+    /*axios.get('https://2c7b355e-3990-42fb-994b-e34ad6bb1887.mock.pstmn.io/product/?serviceNumber='+sn).then(resp=> {
         
         let valor_tipo= tipo;
         //resp original
@@ -51,7 +118,7 @@ const welcomePost = (req, res) => {
     })
     .finally(() => {
         console.log('finalizado!!');
-    })
+    }) */
     
     
 }
