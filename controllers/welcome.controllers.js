@@ -82,6 +82,20 @@ const welcomePost = (req, res) => {
                 }
             )
             break;    
+        //clavistel es Claro-Virgin-Entel        
+        case '56555555555':
+            res.json(
+                {
+                    "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
+                    "status": "",
+                    "rating": "",
+                    "tenant_type": "",
+                    "tenant_baseType": null,
+                    "tenant": "Clavistel"
+                }
+            )
+            break;        
+            
 
         default:    
             res.json(
