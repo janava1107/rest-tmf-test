@@ -75,7 +75,7 @@ const welcomePost = (req, res) => {
                 {
                     "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
                     "status": "inactive",
-                    "rating": "",
+                    "rating": "Postpaid",
                     "tenant_type": "",
                     "tenant_baseType": "",
                     "tenant": ""
@@ -88,7 +88,7 @@ const welcomePost = (req, res) => {
                 {
                     "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
                     "status": "inactive",
-                    "rating": "",
+                    "rating": "Postpaid",
                     "tenant_type": "",
                     "tenant_baseType": "",
                     "tenant": ""
