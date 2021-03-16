@@ -86,13 +86,13 @@ const consultaconsumoPost = (req, res) => {
 
                 "bucket_usageType_data": "Data",
                 "bucket_initialBalance_data": "10GB",
-                "bucketBalance_remainingBalanceAmount_data": "8GB",
+                "bucketBalance_remainingBalanceAmount_data": "8",
                 "bucket_name_data": "10Gigas of Data",
                 "bucket_isUnlimited_data": false,
 
                 "bucket_usageType_voice": "",
                 "bucket_initialBalance_voice": "",
-                "bucketBalance_remainingBalanceAmount_voice": "",
+                "bucketBalance_remainingBalanceAmount_voice": "0",
                 "bucket_name_voice": "",
                 "bucket_isUnlimited_voice": false,
 
@@ -120,13 +120,13 @@ const consultaconsumoPost = (req, res) => {
 
                 "bucket_usageType_data": "Data",
                 "bucket_initialBalance_data": "10GB",
-                "bucketBalance_remainingBalanceAmount_data": "8GB",
+                "bucketBalance_remainingBalanceAmount_data": "8",
                 "bucket_name_data": "10Gigas of Data",
                 "bucket_isUnlimited_data": false,
 
                 "bucket_usageType_voice": "Voice",
                 "bucket_initialBalance_voice": "100Min",
-                "bucketBalance_remainingBalanceAmount_voice": "88Min",
+                "bucketBalance_remainingBalanceAmount_voice": "88",
                 "bucket_name_voice": "10Gigas of Data and 100Min of Voice",
                 "bucket_isUnlimited_voice": false,
 
@@ -154,13 +154,13 @@ const consultaconsumoPost = (req, res) => {
 
                 "bucket_usageType_data": "Data",
                 "bucket_initialBalance_data": "10GB",
-                "bucketBalance_remainingBalanceAmount_data": "0GB",
+                "bucketBalance_remainingBalanceAmount_data": "0",
                 "bucket_name_data": "10Gigas of Data",
                 "bucket_isUnlimited_data": false,
 
                 "bucket_usageType_voice": "Voice",
                 "bucket_initialBalance_voice": "100Min",
-                "bucketBalance_remainingBalanceAmount_voice": "88Min",
+                "bucketBalance_remainingBalanceAmount_voice": "88",
                 "bucket_name_voice": "10Gigas of Data and 100Min of Voice",
                 "bucket_isUnlimited_voice": false,
 
@@ -187,19 +187,19 @@ const consultaconsumoPost = (req, res) => {
 
                 "bucket_usageType_data": "Data",
                 "bucket_initialBalance_data": "10GB",
-                "bucketBalance_remainingBalanceAmount_data": "8GB",
+                "bucketBalance_remainingBalanceAmount_data": "8",
                 "bucket_name_data": "10Gigas of Data",
                 "bucket_isUnlimited_data": true,
 
                 "bucket_usageType_voice": "Voice",
                 "bucket_initialBalance_voice": "100Min",
-                "bucketBalance_remainingBalanceAmount_voice": "88Min",
+                "bucketBalance_remainingBalanceAmount_voice": "88",
                 "bucket_name_voice": "10Gigas of Data and 100Min of Voice",
                 "bucket_isUnlimited_voice": true,
 
                 "bucket_usageType_currency": "",
                 "bucket_initialBalance_currency": "",
-                "bucketBalance_remainingBalanceAmount_currency": "",
+                "bucketBalance_remainingBalanceAmount_currency": "0",
                 "bucket_name_currency": "",
                 "bucket_isUnlimited_currency": false,
 
@@ -220,19 +220,19 @@ const consultaconsumoPost = (req, res) => {
 
             "bucket_usageType_data": "Data",
             "bucket_initialBalance_data": "10GB",
-            "bucketBalance_remainingBalanceAmount_data": "8GB",
+            "bucketBalance_remainingBalanceAmount_data": "8",
             "bucket_name_data": "10Gigas of Data",
             "bucket_isUnlimited_data": true,
 
             "bucket_usageType_voice": "Voice",
             "bucket_initialBalance_voice": "100Min",
-            "bucketBalance_remainingBalanceAmount_voice": "0Min",
+            "bucketBalance_remainingBalanceAmount_voice": "0",
             "bucket_name_voice": "10Gigas of Data and 100Min of Voice",
             "bucket_isUnlimited_voice": false,
 
             "bucket_usageType_currency": "",
             "bucket_initialBalance_currency": "",
-            "bucketBalance_remainingBalanceAmount_currency": "",
+            "bucketBalance_remainingBalanceAmount_currency": "0",
             "bucket_name_currency": "",
             "bucket_isUnlimited_currency": false,
 
@@ -253,19 +253,19 @@ const consultaconsumoPost = (req, res) => {
 
                 "bucket_usageType_data": "",
                 "bucket_initialBalance_data": "",
-                "bucketBalance_remainingBalanceAmount_data": "",
+                "bucketBalance_remainingBalanceAmount_data": "0",
                 "bucket_name_data": "",
                 "bucket_isUnlimited_data": false,
 
                 "bucket_usageType_voice": "",
                 "bucket_initialBalance_voice": "",
-                "bucketBalance_remainingBalanceAmount_voice": "",
+                "bucketBalance_remainingBalanceAmount_voice": "0",
                 "bucket_name_voice": "",
                 "bucket_isUnlimited_voice": false,
 
                 "bucket_usageType_currency": "",
                 "bucket_initialBalance_currency": "",
-                "bucketBalance_remainingBalanceAmount_currency": "",
+                "bucketBalance_remainingBalanceAmount_currency": "0",
                 "bucket_name_currency": "",
                 "bucket_isUnlimited_currency": false,
 
