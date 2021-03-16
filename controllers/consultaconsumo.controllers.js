@@ -246,6 +246,107 @@ const consultaconsumoPost = (req, res) => {
         })
             break; 
 
+
+        case '56333333333':
+            res.json({
+                "sn": "56333333333",
+                "tenant_id": "WOM-Chile",
+    
+                "bucket_usageType_data": "Data",
+                "bucket_initialBalance_data": "10GB",
+                "bucketBalance_remainingBalanceAmount_data": "0",
+                "bucket_name_data": "10Gigas of Data",
+                "bucket_isUnlimited_data": true,
+    
+                "bucket_usageType_voice": "Voice",
+                "bucket_initialBalance_voice": "100Min",
+                "bucketBalance_remainingBalanceAmount_voice": "0",
+                "bucket_name_voice": "10Gigas of Data and 100Min of Voice",
+                "bucket_isUnlimited_voice": false,
+    
+                "bucket_usageType_currency": "",
+                "bucket_initialBalance_currency": "",
+                "bucketBalance_remainingBalanceAmount_currency": "0",
+                "bucket_name_currency": "",
+                "bucket_isUnlimited_currency": false,
+    
+                // "bucket_usageType_sms": "",
+                // "bucket_initialBalance_sms": "",
+                // "bucketBalance_remainingBalanceAmount_sms": "",
+                // "bucket_name_sms": "",
+                // "bucket_isUnlimited_sms": false,
+    
+                "tenant_schemaLocation": "urn:wom:UsageConsumption:/schema/2.0.0"
+            })
+                break;
+                
+        case '56222222222':
+            res.json({
+                "sn": "56222222222",
+                "tenant_id": "WOM-Chile",
+
+                "bucket_usageType_data": "Data",
+                "bucket_initialBalance_data": "10GB",
+                "bucketBalance_remainingBalanceAmount_data": "0",
+                "bucket_name_data": "10Gigas of Data",
+                "bucket_isUnlimited_data": false,
+
+                "bucket_usageType_voice": "",
+                "bucket_initialBalance_voice": "",
+                "bucketBalance_remainingBalanceAmount_voice": "0",
+                "bucket_name_voice": "",
+                "bucket_isUnlimited_voice": false,
+
+                "bucket_usageType_currency": "Currency",
+                "bucket_initialBalance_currency": "13000",
+                "bucketBalance_remainingBalanceAmount_currency": "11500",
+                "bucket_name_currency": "Lucas del currency",
+                "bucket_isUnlimited_currency": false,
+
+                // "bucket_usageType_sms": "",
+                // "bucket_initialBalance_sms": "",
+                // "bucketBalance_remainingBalanceAmount_sms": "",
+                // "bucket_name_sms": "",
+                // "bucket_isUnlimited_sms": false,
+
+                "tenant_schemaLocation": "urn:wom:UsageConsumption:/schema/2.0.0"
+            })
+            break;    
+            
+        case '56111111111':
+            res.json({
+                "sn": "56111111111",
+                "tenant_id": "WOM-Chile",
+
+                "bucket_usageType_data": "Data",
+                "bucket_initialBalance_data": "10GB",
+                "bucketBalance_remainingBalanceAmount_data": "0",
+                "bucket_name_data": "10Gigas of Data",
+                "bucket_isUnlimited_data": false,
+
+                "bucket_usageType_voice": "",
+                "bucket_initialBalance_voice": "",
+                "bucketBalance_remainingBalanceAmount_voice": "0",
+                "bucket_name_voice": "",
+                "bucket_isUnlimited_voice": false,
+
+                "bucket_usageType_currency": "Currency",
+                "bucket_initialBalance_currency": "13000",
+                "bucketBalance_remainingBalanceAmount_currency": "0",
+                "bucket_name_currency": "Lucas del currency",
+                "bucket_isUnlimited_currency": false,
+
+                // "bucket_usageType_sms": "",
+                // "bucket_initialBalance_sms": "",
+                // "bucketBalance_remainingBalanceAmount_sms": "",
+                // "bucket_name_sms": "",
+                // "bucket_isUnlimited_sms": false,
+
+                "tenant_schemaLocation": "urn:wom:UsageConsumption:/schema/2.0.0"
+            })
+            break;    
+
+
         default:
             res.json({
                 "sn": "56000000000",
@@ -277,7 +378,10 @@ const consultaconsumoPost = (req, res) => {
 
                 "tenant_schemaLocation": "urn:wom:UsageConsumption:/schema/2.0.0"
             })
-        }        
+        }   
+        
+        
+        
 
 
     /*axios.get('https://2c7b355e-3990-42fb-994b-e34ad6bb1887.mock.pstmn.io/usageConsumptionReport/?serviceNumber='+sn).then(resp=> {
