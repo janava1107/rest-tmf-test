@@ -54,11 +54,11 @@ const consultaconsumoPost = (req, res) => {
                 "bucketBalance_remainingBalanceAmount_data": "8GB",
                 "bucket_name_data": "10Gigas of Data",
                 "bucket_isUnlimited_data": false,
-            
-                "bucket_usageType_voice": "",
-                "bucket_initialBalance_voice": "",
-                "bucketBalance_remainingBalanceAmount_voice": "",
-                "bucket_name_voice": "",
+
+                "bucket_usageType_voice": "Voice",
+                "bucket_initialBalance_voice": "100Min",
+                "bucketBalance_remainingBalanceAmount_voice": "88Min",
+                "bucket_name_voice": "10Gigas of Data and 100Min of Voice",
                 "bucket_isUnlimited_voice": false,
             
                 "bucket_usageType_currency": "",
@@ -67,11 +67,11 @@ const consultaconsumoPost = (req, res) => {
                 "bucket_name_currency": "",
                 "bucket_isUnlimited_currency": false,
             
-                "bucket_usageType_sms": "",
-                "bucket_initialBalance_sms": "",
-                "bucketBalance_remainingBalanceAmount_sms": "",
-                "bucket_name_sms": "",
-                "bucket_isUnlimited_sms": false,
+                // "bucket_usageType_sms": "",
+                // "bucket_initialBalance_sms": "",
+                // "bucketBalance_remainingBalanceAmount_sms": "",
+                // "bucket_name_sms": "",
+                // "bucket_isUnlimited_sms": false,
             
                 "tenant_schemaLocation": "urn:wom:UsageConsumption:/schema/2.0.0"
             })
@@ -90,23 +90,23 @@ const consultaconsumoPost = (req, res) => {
                 "bucket_name_data": "10Gigas of Data",
                 "bucket_isUnlimited_data": false,
 
-                "bucket_usageType_voice": "Voice",
-                "bucket_initialBalance_voice": "100Min",
-                "bucketBalance_remainingBalanceAmount_voice": "88Min",
-                "bucket_name_voice": "10Gigas of Data and 100Min of Voice",
+                "bucket_usageType_voice": "",
+                "bucket_initialBalance_voice": "",
+                "bucketBalance_remainingBalanceAmount_voice": "",
+                "bucket_name_voice": "",
                 "bucket_isUnlimited_voice": false,
 
-                "bucket_usageType_currency": "",
-                "bucket_initialBalance_currency": "",
-                "bucketBalance_remainingBalanceAmount_currency": "",
-                "bucket_name_currency": "",
+                "bucket_usageType_currency": "Currency",
+                "bucket_initialBalance_currency": "13000",
+                "bucketBalance_remainingBalanceAmount_currency": "11500",
+                "bucket_name_currency": "Lucas del currency",
                 "bucket_isUnlimited_currency": false,
 
-                "bucket_usageType_sms": "",
-                "bucket_initialBalance_sms": "",
-                "bucketBalance_remainingBalanceAmount_sms": "",
-                "bucket_name_sms": "",
-                "bucket_isUnlimited_sms": false,
+                // "bucket_usageType_sms": "",
+                // "bucket_initialBalance_sms": "",
+                // "bucketBalance_remainingBalanceAmount_sms": "",
+                // "bucket_name_sms": "",
+                // "bucket_isUnlimited_sms": false,
 
                 "tenant_schemaLocation": "urn:wom:UsageConsumption:/schema/2.0.0"
             })
@@ -131,16 +131,16 @@ const consultaconsumoPost = (req, res) => {
                 "bucket_isUnlimited_voice": false,
 
                 "bucket_usageType_currency": "Currency",
-                "bucket_initialBalance_currency": "",
-                "bucketBalance_remainingBalanceAmount_currency": "",
-                "bucket_name_currency": "",
+                "bucket_initialBalance_currency": "13000",
+                "bucketBalance_remainingBalanceAmount_currency": "11500",
+                "bucket_name_currency": "Lucas del currency",
                 "bucket_isUnlimited_currency": false,
 
-                "bucket_usageType_sms": "",
-                "bucket_initialBalance_sms": "",
-                "bucketBalance_remainingBalanceAmount_sms": "",
-                "bucket_name_sms": "",
-                "bucket_isUnlimited_sms": false,
+                //"bucket_usageType_sms": "",
+                //"bucket_initialBalance_sms": "",
+                //"bucketBalance_remainingBalanceAmount_sms": "",
+                //"bucket_name_sms": "",
+                //"bucket_isUnlimited_sms": false,
 
                 "tenant_schemaLocation": "urn:wom:UsageConsumption:/schema/2.0.0"
             })
@@ -154,7 +154,7 @@ const consultaconsumoPost = (req, res) => {
 
                 "bucket_usageType_data": "Data",
                 "bucket_initialBalance_data": "10GB",
-                "bucketBalance_remainingBalanceAmount_data": "8GB",
+                "bucketBalance_remainingBalanceAmount_data": "0GB",
                 "bucket_name_data": "10Gigas of Data",
                 "bucket_isUnlimited_data": false,
 
@@ -165,16 +165,16 @@ const consultaconsumoPost = (req, res) => {
                 "bucket_isUnlimited_voice": false,
 
                 "bucket_usageType_currency": "Currency",
-                "bucket_initialBalance_currency": "",
-                "bucketBalance_remainingBalanceAmount_currency": "",
-                "bucket_name_currency": "Data currency",
+                "bucket_initialBalance_currency": "13000",
+                "bucketBalance_remainingBalanceAmount_currency": "11500",
+                "bucket_name_currency": "Lucas del currency",
                 "bucket_isUnlimited_currency": false,
 
-                "bucket_usageType_sms": "SMS",
-                "bucket_initialBalance_sms": "100",
-                "bucketBalance_remainingBalanceAmount_sms": "98",
-                "bucket_name_sms": "Data sms",
-                "bucket_isUnlimited_sms": false,
+                // "bucket_usageType_sms": "SMS",
+                // "bucket_initialBalance_sms": "100",
+                // "bucketBalance_remainingBalanceAmount_sms": "98",
+                // "bucket_name_sms": "Data sms",
+                // "bucket_isUnlimited_sms": false,
 
                 "tenant_schemaLocation": "urn:wom:UsageConsumption:/schema/2.0.0"
             })
@@ -203,32 +203,65 @@ const consultaconsumoPost = (req, res) => {
                 "bucket_name_currency": "",
                 "bucket_isUnlimited_currency": false,
 
-                "bucket_usageType_sms": "",
-                "bucket_initialBalance_sms": "",
-                "bucketBalance_remainingBalanceAmount_sms": "",
-                "bucket_name_sms": "",
-                "bucket_isUnlimited_sms": false,
+                // "bucket_usageType_sms": "",
+                // "bucket_initialBalance_sms": "",
+                // "bucketBalance_remainingBalanceAmount_sms": "",
+                // "bucket_name_sms": "",
+                // "bucket_isUnlimited_sms": false,
 
                 "tenant_schemaLocation": "urn:wom:UsageConsumption:/schema/2.0.0"
             })
             break; 
+        
+        case '56444444444':
+        res.json({
+            "sn": "56444444444",
+            "tenant_id": "WOM-Chile",
+
+            "bucket_usageType_data": "Data",
+            "bucket_initialBalance_data": "10GB",
+            "bucketBalance_remainingBalanceAmount_data": "8GB",
+            "bucket_name_data": "10Gigas of Data",
+            "bucket_isUnlimited_data": true,
+
+            "bucket_usageType_voice": "Voice",
+            "bucket_initialBalance_voice": "100Min",
+            "bucketBalance_remainingBalanceAmount_voice": "0Min",
+            "bucket_name_voice": "10Gigas of Data and 100Min of Voice",
+            "bucket_isUnlimited_voice": false,
+
+            "bucket_usageType_currency": "",
+            "bucket_initialBalance_currency": "",
+            "bucketBalance_remainingBalanceAmount_currency": "",
+            "bucket_name_currency": "",
+            "bucket_isUnlimited_currency": false,
+
+            // "bucket_usageType_sms": "",
+            // "bucket_initialBalance_sms": "",
+            // "bucketBalance_remainingBalanceAmount_sms": "",
+            // "bucket_name_sms": "",
+            // "bucket_isUnlimited_sms": false,
+
+            "tenant_schemaLocation": "urn:wom:UsageConsumption:/schema/2.0.0"
+        })
+            break; 
 
         default:
             res.json({
-                "sn": "56555555555",
+                "sn": "56000000000",
                 "tenant_id": "WOM-Chile",
 
-                "bucket_usageType_data": "Data",
-                "bucket_initialBalance_data": "10GB",
-                "bucketBalance_remainingBalanceAmount_data": "8GB",
-                "bucket_name_data": "10Gigas of Data",
-                "bucket_isUnlimited_data": true,
+                "bucket_usageType_data": "",
+                "bucket_initialBalance_data": "",
+                "bucketBalance_remainingBalanceAmount_data": "",
+                "bucket_name_data": "",
+                "bucket_isUnlimited_data": false,
 
-                "bucket_usageType_voice": "Voice",
-                "bucket_initialBalance_voice": "100Min",
-                "bucketBalance_remainingBalanceAmount_voice": "88Min",
-                "bucket_name_voice": "10Gigas of Data and 100Min of Voice",
-                "bucket_isUnlimited_voice": true,
+                "bucket_usageType_voice": "",
+                "bucket_initialBalance_voice": "",
+                "bucketBalance_remainingBalanceAmount_voice": "",
+                "bucket_name_voice": "",
+                "bucket_isUnlimited_voice": false,
 
                 "bucket_usageType_currency": "",
                 "bucket_initialBalance_currency": "",
@@ -236,11 +269,11 @@ const consultaconsumoPost = (req, res) => {
                 "bucket_name_currency": "",
                 "bucket_isUnlimited_currency": false,
 
-                "bucket_usageType_sms": "",
-                "bucket_initialBalance_sms": "",
-                "bucketBalance_remainingBalanceAmount_sms": "",
-                "bucket_name_sms": "",
-                "bucket_isUnlimited_sms": false,
+                // "bucket_usageType_sms": "",
+                // "bucket_initialBalance_sms": "",
+                // "bucketBalance_remainingBalanceAmount_sms": "",
+                // "bucket_name_sms": "",
+                // "bucket_isUnlimited_sms": false,
 
                 "tenant_schemaLocation": "urn:wom:UsageConsumption:/schema/2.0.0"
             })
