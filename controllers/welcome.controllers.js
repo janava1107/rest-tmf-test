@@ -37,6 +37,8 @@ const welcomePost = (req, res) => {
         case '56999999999':
             res.json(
                 {
+
+                    "sn":sn,
                     "token":token,
                     "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
                     "status": "active",
