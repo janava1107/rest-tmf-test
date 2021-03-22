@@ -37,6 +37,7 @@ const welcomePost = (req, res) => {
         case '56999999999':
             res.json(
                 {
+                    "token":token,
                     "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
                     "status": "active",
                     "rating": "Hybrid",
@@ -150,11 +151,11 @@ const welcomePost = (req, res) => {
                 }
             )
     } 
-
+    
      
     /*
-    axios.get('https://api-staging.wom.aaxis-devops.net/product_inventory/v2/product',{ headers: { Authorization: AuthStr,usermsisdn:sn } }).then(resp=> {
-    
+    axios.get(process.env.URL_TMF+'/product_inventory/v2/product',{ headers: { Authorization: AuthStr,usermsisdn:sn } }).then(resp=> {
+        
         res.json({
             sn,
             rating:resp.data[0].ratingType,
@@ -171,8 +172,8 @@ const welcomePost = (req, res) => {
     })
     .finally(() => {
         console.log('finalizado!!');
-    }) */
-    
+    }) 
+    */
     
 }
 
