@@ -4,5 +4,17 @@ function getTimestamptoDayMonth(fecha){
     return daymonth;
 }
 
+function getCompareDateToNow(fecha){
+    var f1 = new Date();
+    var f2 = new Date(fecha);
+    
+    if(f1>f2){
+        return 'vencida';
+    }else{
+        return 'vigente';
+    }
 
-module.exports = {getTimestamptoDayMonth};
+    return daymonth;
+}
+
+module.exports = {getTimestamptoDayMonth,getCompareDateToNow};

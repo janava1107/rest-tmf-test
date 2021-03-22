@@ -28,8 +28,11 @@ const welcomeGet = (req, res) => {
 
 const welcomePost = (req, res) => {
     console.log('welcomepost');
-    const {sn,tipo} = req.body;
+    const {sn} = req.body;
+    const {token} =req.headers;
+    const AuthStr = 'Bearer '+token;
 
+    
     switch(sn){
         case '56999999999':
             res.json(
@@ -95,7 +98,45 @@ const welcomePost = (req, res) => {
                 }
             )
             break;        
+        
+        case '56998125585':
+            res.json(
+                {
+                    "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
+                    "status": "active",
+                    "rating": "Postpaid",
+                    "tenant_type": "WOMTenantRefOrValue",
+                    "tenant_baseType": null,
+                    "tenant": "WOM-Chile"
+                }
+            )
+            break; 
+        
+        case '56961324725':
+            res.json(
+                {
+                    "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
+                    "status": "active",
+                    "rating": "Hybrid",
+                    "tenant_type": "WOMTenantRefOrValue",
+                    "tenant_baseType": null,
+                    "tenant": "WOM-Chile"
+                }
+            )
+            break;  
             
+        case '56922033837':
+            res.json(
+                {
+                    "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
+                    "status": "active",
+                    "rating": "Prepaid",
+                    "tenant_type": "WOMTenantRefOrValue",
+                    "tenant_baseType": null,
+                    "tenant": "WOM-Chile"
+                }
+            )
+            break;    
 
         default:    
             res.json(
@@ -108,22 +149,20 @@ const welcomePost = (req, res) => {
                     "tenant": ""
                 }
             )
-    }
+    } 
 
+     
+    /*
+    axios.get('https://api-staging.wom.aaxis-devops.net/product_inventory/v2/product',{ headers: { Authorization: AuthStr,usermsisdn:sn } }).then(resp=> {
     
-    /*axios.get('https://2c7b355e-3990-42fb-994b-e34ad6bb1887.mock.pstmn.io/product/?serviceNumber='+sn).then(resp=> {
-        
-        let valor_tipo= tipo;
-        //resp original
         res.json({
-            //sn,
-            //rating:resp.data.ratingType,
-            rating:valor_tipo,
-            status:resp.data.status,
-            tenant_baseType:resp.data.tenant['@baseType'],
-            tenant_schemaLocation:resp.data.tenant['@schemaLocation'],
-            tenant_type:resp.data.tenant['@type'],
-            tenant:resp.data.tenant.id
+            sn,
+            rating:resp.data[0].ratingType,
+            status:resp.data[0].status,
+            baseType:resp.data[0]['@baseType'],
+            tenant_schemaLocation:resp.data[0].tenant['@schemaLocation'],
+            tenant_type:resp.data[0].tenant['@type'],
+            tenant:resp.data[0].tenant.id
         });
         
     })

@@ -40,8 +40,10 @@ const consultaconsumoGet = (req, res) => {
 
 const consultaconsumoPost = (req, res) => {
     console.log('consultaconsumopost');
-    const {sn,ert} = req.body;
-
+    const {sn} = req.body;
+    const {token} =req.headers;
+    const AuthStr = 'Bearer '+token;
+    
     switch(sn){
         //data
         case '56999999999':
@@ -381,30 +383,72 @@ const consultaconsumoPost = (req, res) => {
         }   
         
         
+
+
+    /*    
+    axios.get('https://api-staging.wom.aaxis-devops.net/usage_consumption/v2/usageConsumptionReport',{ headers: { Authorization: AuthStr,usermsisdn:sn }}).then(resp=> {
+        //console.log(resp.data[0]);
         
-
-
-    /*axios.get('https://2c7b355e-3990-42fb-994b-e34ad6bb1887.mock.pstmn.io/usageConsumptionReport/?serviceNumber='+sn).then(resp=> {
-        //console.log(resp.data);
-        res.json({
+        const consumerPre={
             sn,
-            //objeto bucket
-            bucket_type:resp.data.bucket[0]['@type'],
-            bucket_name:resp.data.bucket[0].name,
-            bucket_initialBalance:resp.data.bucket[0].intitalBalance,
-            bucket_isUnlimited:resp.data.bucket[0].isUnlimited,
-            bucket_usageType:resp.data.bucket[0].usageType,
-            
-            //objeto bucket->bucketBalance
-            bucketBalance_remainingBalanceName:resp.data.bucket[0].bucketBalance[0].remainingValueName,
-            bucketBalance_remainingBalanceAmount:resp.data.bucket[0].bucketBalance[0].remainingValue.amount,
-            
-            //objeto tenant
-            tenant_baseType:resp.data.tenant['@baseType'],
-            tenant_schemaLocation:resp.data.tenant['@schemaLocation'],
-            tenant_type:resp.data.tenant['@type'],
-            tenant_id:resp.data.tenant.id
-        });
+            tenant_id:resp.data[0].tenant.id,
+            tenant_schemaLocation:resp.data[0].tenant['@schemaLocation']
+        };
+
+        var consumerCurrency ={};
+        var consumerVoice ={};
+        var consumerSms ={};
+        var consumerData ={};
+
+        resp.data[0].bucket.forEach(value => {
+            //console.log(value.usageType);
+        
+            if(value.usageType == '1'){ //currency
+                consumerCurrency = {
+                    bucket_usageType_currency:'Currency',
+                    bucket_initialBalance_currency:value.initialBalance,
+                    bucketBalance_remainingBalanceAmount_currency:value.bucketBalance[0].remainingValue.amount,
+                    bucket_name_currency:value.name,
+                    bucket_isUnlimited_currency:value.isUnlimited,
+                }
+            }
+            //console.log(consumerCurrency);
+
+            if(value.usageType == '2'){ //sms
+                consumerSms = {
+                    bucket_usageType_sms:'SMS',
+                    bucket_initialBalance_sms:value.initialBalance,
+                    bucketBalance_remainingBalanceAmount_sms:value.bucketBalance[0].remainingValue.amount,
+                    bucket_name_sms:value.name,
+                    bucket_isUnlimited_sms:value.isUnlimited,
+                }
+            }
+
+            if(value.usageType == '3'){//voice
+                consumerVoice = {
+                    bucket_usageType_voice:'SMS',
+                    bucket_initialBalance_voice:value.initialBalance,
+                    bucketBalance_remainingBalanceAmount_voice:value.bucketBalance[0].remainingValue.amount,
+                    bucket_name_voice:value.name,
+                    bucket_isUnlimited_voice:value.isUnlimited,
+                }
+            }
+
+            if(value.usageType == '4'){//data
+                consumerData = {
+                    bucket_usageType_data:'Data',
+                    bucket_initialBalance_data:value.initialBalance,
+                    bucketBalance_remainingBalanceAmount_data:value.bucketBalance[0].remainingValue.amount,
+                    bucket_name_data:value.name,
+                    bucket_isUnlimited_data:value.isUnlimited,
+                }
+            }
+
+        })
+        //console.log(consumerCurrency);
+        const consumerAll={...consumerPre,...consumerCurrency,...consumerSms,...consumerVoice,...consumerData}
+        //console.log(consumerAll);
+        res.json(consumerAll);
         
     })
     .catch((error) => {
