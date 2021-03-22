@@ -49,6 +49,22 @@ const welcomePost = (req, res) => {
                 }
             )
             break;
+        
+        case '56999999998':
+            res.json(
+                {
+
+                    "sn":sn,
+                    "token":token,
+                    "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
+                    "status": "active",
+                    "rating": "Hybrid",
+                    "tenant_type": "WOMTenantRefOrValue",
+                    "tenant_baseType": null,
+                    "tenant": "WOM-Chile"
+                }
+            )
+            break;    
 
         case '56888888888':
             res.json(
