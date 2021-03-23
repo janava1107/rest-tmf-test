@@ -31,7 +31,7 @@ const consultaboletacicloPost = (req, res) => {
     
     //caso prueba
     switch(sn){
-        case '56999999999':
+        case '56998125585':
             res.json(
                 {
                     "billdocument_attachmentType": "application/pdf",
@@ -49,7 +49,7 @@ const consultaboletacicloPost = (req, res) => {
             )
             break;
 
-        case '56888888888':
+        case '56961324725':
             res.json(
                 {
                     "billdocument_attachmentType": "application/pdf",
@@ -67,7 +67,7 @@ const consultaboletacicloPost = (req, res) => {
             )
             break;
         
-        case '56777777777':
+        case '56922033837':
             res.json(
                 {
                     "billdocument_attachmentType": "",

@@ -81,9 +81,9 @@ const consultaconsumoPost = (req, res) => {
 
         //data-voice    
 
-        case '56888888888':
+        case '56922033837':
             res.json({
-                "sn": "56888888888",
+                "sn": "56922033837",
                 "tenant_id": "WOM-Chile",
 
                 "bucket_usageType_data": "Data",
@@ -115,9 +115,9 @@ const consultaconsumoPost = (req, res) => {
             break; 
 
         //Data-voice-currency
-        case '56777777777':
+        case '56961324725':
             res.json({
-                "sn": "56777777777",
+                "sn": "56961324725",
                 "tenant_id": "WOM-Chile",
 
                 "bucket_usageType_data": "Data",
@@ -149,9 +149,9 @@ const consultaconsumoPost = (req, res) => {
             break;
         
         //Data-voice-currency-sms    
-        case '56666666666':
+        case '56998125585':
             res.json({
-                "sn": "56666666666",
+                "sn": "56998125585",
                 "tenant_id": "WOM-Chile",
 
                 "bucket_usageType_data": "Data",

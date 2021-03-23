@@ -31,7 +31,8 @@ const welcomePost = (req, res) => {
     const {sn} = req.body;
     const {token} =req.headers;
     const AuthStr = 'Bearer '+token;
-
+    
+    //console.log(token);
     
     switch(sn){
         case '56999999999':
