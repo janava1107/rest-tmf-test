@@ -6,10 +6,10 @@ class Server {
         this.app = express();
         this.port = process.env.PORT;
         //path endpoint
-        //this.authPath       = '/bff/auth'
         this.welcomePath    = '/bff/welcome';
         this.consultaconsumoPath    = '/bff/consultaconsumo';
         this.consultaboletacicloPath    = '/bff/consultaboletaciclo';
+        this.otaPath    = '/bff/ota';
         //middlewares
         this.middlewares();
 
@@ -29,6 +29,7 @@ class Server {
         this.app.use(this.welcomePath,require ('../routes/welcome.routes'));
         this.app.use(this.consultaconsumoPath,require ('../routes/consultaconsumo.routes'));
         this.app.use(this.consultaboletacicloPath,require ('../routes/consultaboletaciclo.routes'));
+        this.app.use(this.otaPath,require ('../routes/ota.routes'));
     
     }
 
