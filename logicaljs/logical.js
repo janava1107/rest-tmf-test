@@ -14,7 +14,6 @@ function getCompareDateToNow(fecha){
         return 'vigente';
     }
 
-    return daymonth;
 }
 
 module.exports = {getTimestamptoDayMonth,getCompareDateToNow};

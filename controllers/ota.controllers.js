@@ -25,7 +25,15 @@ const otaPost = (req, res) => {
                     "status": "success", //estado ota dummy
                 }
             )
-            break; 
+            break;
+            
+        case '56933118533':
+            res.json(
+                {
+                    "status": "success", //estado ota dummy
+                }
+            )
+            break;    
         
         case '56961324725':
             res.json(

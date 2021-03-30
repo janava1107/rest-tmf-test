@@ -80,7 +80,7 @@ const welcomePost = (req, res) => {
             )
             break;
         
-        case '56777777777':
+        case '56933118533':
             res.json(
                 {
                     "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",

@@ -182,9 +182,9 @@ const consultaconsumoPost = (req, res) => {
             })
             break;
             
-        case '56555555555':
+        case '56933118533':
             res.json({
-                "sn": "56555555555",
+                "sn": "56933118533",
                 "tenant_id": "WOM-Chile",
 
                 "bucket_usageType_data": "Data",
