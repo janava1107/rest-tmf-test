@@ -35,6 +35,8 @@ const welcomePost = (req, res) => {
     //console.log(token);
     
     switch(sn){
+        
+        
         case '56999999999':
             res.json(
                 {
@@ -67,7 +69,7 @@ const welcomePost = (req, res) => {
             )
             break;    
 
-        case '56888888888':
+        case '56920267605':
             res.json(
                 {
                     "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
@@ -80,7 +82,7 @@ const welcomePost = (req, res) => {
             )
             break;
         
-        case '56933118533':
+        case '56955249972':
             res.json(
                 {
                     "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
@@ -92,6 +94,46 @@ const welcomePost = (req, res) => {
                 }
             )
             break; 
+
+        case '56988243100':
+            res.json(
+                {
+                    "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
+                    "status": "active",
+                    "rating": "Postpaid",
+                    "tenant_type": "WOMTenantRefOrValue",
+                    "tenant_baseType": null,
+                    "tenant": "WOM-Chile"
+                }
+            )
+            break;
+            
+        case '56950298956':
+            res.json(
+                {
+                    "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
+                    "status": "active",
+                    "rating": "Postpaid",
+                    "tenant_type": "WOMTenantRefOrValue",
+                    "tenant_baseType": null,
+                    "tenant": "WOM-Chile"
+                }
+            )
+            break;    
+
+            
+        case '56933118533':
+            res.json(
+                {
+                    "tenant_schemaLocation": "urn:wom:ProductInventory:/schema/2.0.0",
+                    "status": "active",
+                    "rating": "Postpaid",
+                    "tenant_type": "WOMTenantRefOrValue",
+                    "tenant_baseType": null,
+                    "tenant": "WOM-Chile"
+                }
+            )
+            break;     
         
         case '56666666666':
             res.json(
@@ -144,7 +186,7 @@ const welcomePost = (req, res) => {
                 }
             )
             break;  
-            
+              
         case '56922033837':
             res.json(
                 {

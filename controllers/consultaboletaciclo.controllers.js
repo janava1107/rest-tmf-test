@@ -32,6 +32,7 @@ const consultaboletacicloPost = (req, res) => {
     //caso prueba
     switch(sn){
 
+
         case '56933118533':
             res.json(
                 {
@@ -49,6 +50,80 @@ const consultaboletacicloPost = (req, res) => {
                 }
             )
             break;
+
+        case '56933118533':
+            res.json(
+                {
+                    "billdocument_attachmentType": "application/pdf",
+                    "billperiod_enddate": "23/03",
+                    "remainingAmount": "7000",
+                    "billcycle_name": "Bill Cycle for March 2021",
+                    "billDate": "25/03",
+                    "billperiod_startdate": "23/02",
+                    "amountDue": "10000",
+                    "tenant_schemalocation": "urn:wom:CustomerBill:/schema/2.0.0",
+                    "billdocument_url": "/link/to/pdf/document.pdf",
+                    "paymentDueDate": "23/03",
+                    "billstate": "vigente"
+                }
+            )
+            break;
+
+        case '56955249972':
+            res.json(
+                {
+                    "billdocument_attachmentType": "application/pdf",
+                    "billperiod_enddate": "23/03",
+                    "remainingAmount": "7000",
+                    "billcycle_name": "Bill Cycle for March 2021",
+                    "billDate": "25/03",
+                    "billperiod_startdate": "23/02",
+                    "amountDue": "10000",
+                    "tenant_schemalocation": "urn:wom:CustomerBill:/schema/2.0.0",
+                    "billdocument_url": "/link/to/pdf/document.pdf",
+                    "paymentDueDate": "23/03",
+                    "billstate": "vigente"
+                }
+            )
+            break;    
+
+        case '56988243100':
+            res.json(
+                {
+                    "billdocument_attachmentType": "application/pdf",
+                    "billperiod_enddate": "23/03",
+                    "remainingAmount": "7000",
+                    "billcycle_name": "Bill Cycle for March 2021",
+                    "billDate": "25/03",
+                    "billperiod_startdate": "23/02",
+                    "amountDue": "10000",
+                    "tenant_schemalocation": "urn:wom:CustomerBill:/schema/2.0.0",
+                    "billdocument_url": "/link/to/pdf/document.pdf",
+                    "paymentDueDate": "23/03",
+                    "billstate": "vigente"
+                }
+            )
+            break;  
+            
+        case '56950298956':
+            res.json(
+                {
+                    "billdocument_attachmentType": "application/pdf",
+                    "billperiod_enddate": "23/03",
+                    "remainingAmount": "7000",
+                    "billcycle_name": "Bill Cycle for March 2021",
+                    "billDate": "25/03",
+                    "billperiod_startdate": "23/02",
+                    "amountDue": "10000",
+                    "tenant_schemalocation": "urn:wom:CustomerBill:/schema/2.0.0",
+                    "billdocument_url": "/link/to/pdf/document.pdf",
+                    "paymentDueDate": "23/03",
+                    "billstate": "vigente"
+                }
+            )
+            break;    
+
+
 
         case '56998125585':
             res.json(

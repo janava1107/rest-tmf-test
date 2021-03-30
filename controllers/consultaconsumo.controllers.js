@@ -46,6 +46,8 @@ const consultaconsumoPost = (req, res) => {
     
     switch(sn){
         //data
+
+        
         case '56999999999':
             res.json({
                 "sn": "56999999999",
@@ -80,10 +82,10 @@ const consultaconsumoPost = (req, res) => {
             break;
 
         //data-voice    
-
-        case '56922033837':
+        
+        case '56920267605':
             res.json({
-                "sn": "56922033837",
+                "sn": "56920267605",
                 "tenant_id": "WOM-Chile",
 
                 "bucket_usageType_data": "Data",
@@ -147,6 +149,111 @@ const consultaconsumoPost = (req, res) => {
                 "tenant_schemaLocation": "urn:wom:UsageConsumption:/schema/2.0.0"
             })
             break;
+
+        //Data-voice-currency
+        case '56955249972':
+            res.json({
+                "sn": "56955249972",
+                "tenant_id": "WOM-Chile",
+
+                "bucket_usageType_data": "Data",
+                "bucket_initialBalance_data": "10GB",
+                "bucketBalance_remainingBalanceAmount_data": "8",
+                "bucket_name_data": "10Gigas of Data",
+                "bucket_isUnlimited_data": false,
+
+                "bucket_usageType_voice": "Voice",
+                "bucket_initialBalance_voice": "100Min",
+                "bucketBalance_remainingBalanceAmount_voice": "88",
+                "bucket_name_voice": "10Gigas of Data and 100Min of Voice",
+                "bucket_isUnlimited_voice": false,
+
+                "bucket_usageType_currency": "Currency",
+                "bucket_initialBalance_currency": "13000",
+                "bucketBalance_remainingBalanceAmount_currency": "11500",
+                "bucket_name_currency": "Lucas del currency",
+                "bucket_isUnlimited_currency": false,
+
+                //"bucket_usageType_sms": "",
+                //"bucket_initialBalance_sms": "",
+                //"bucketBalance_remainingBalanceAmount_sms": "",
+                //"bucket_name_sms": "",
+                //"bucket_isUnlimited_sms": false,
+
+                "tenant_schemaLocation": "urn:wom:UsageConsumption:/schema/2.0.0"
+            })
+            break;
+            
+            
+            //Data-voice-currency
+        case '56988243100':
+            res.json({
+                "sn": "56988243100",
+                "tenant_id": "WOM-Chile",
+
+                "bucket_usageType_data": "Data",
+                "bucket_initialBalance_data": "10GB",
+                "bucketBalance_remainingBalanceAmount_data": "8",
+                "bucket_name_data": "10Gigas of Data",
+                "bucket_isUnlimited_data": false,
+
+                "bucket_usageType_voice": "Voice",
+                "bucket_initialBalance_voice": "100Min",
+                "bucketBalance_remainingBalanceAmount_voice": "88",
+                "bucket_name_voice": "10Gigas of Data and 100Min of Voice",
+                "bucket_isUnlimited_voice": false,
+
+                "bucket_usageType_currency": "Currency",
+                "bucket_initialBalance_currency": "13000",
+                "bucketBalance_remainingBalanceAmount_currency": "11500",
+                "bucket_name_currency": "Lucas del currency",
+                "bucket_isUnlimited_currency": false,
+
+                //"bucket_usageType_sms": "",
+                //"bucket_initialBalance_sms": "",
+                //"bucketBalance_remainingBalanceAmount_sms": "",
+                //"bucket_name_sms": "",
+                //"bucket_isUnlimited_sms": false,
+
+                "tenant_schemaLocation": "urn:wom:UsageConsumption:/schema/2.0.0"
+            })
+            break;
+
+
+            //Data-voice-currency
+        case '56950298956':
+            res.json({
+                "sn": "56950298956",
+                "tenant_id": "WOM-Chile",
+
+                "bucket_usageType_data": "Data",
+                "bucket_initialBalance_data": "10GB",
+                "bucketBalance_remainingBalanceAmount_data": "8",
+                "bucket_name_data": "10Gigas of Data",
+                "bucket_isUnlimited_data": false,
+
+                "bucket_usageType_voice": "Voice",
+                "bucket_initialBalance_voice": "100Min",
+                "bucketBalance_remainingBalanceAmount_voice": "88",
+                "bucket_name_voice": "10Gigas of Data and 100Min of Voice",
+                "bucket_isUnlimited_voice": false,
+
+                "bucket_usageType_currency": "Currency",
+                "bucket_initialBalance_currency": "13000",
+                "bucketBalance_remainingBalanceAmount_currency": "11500",
+                "bucket_name_currency": "Lucas del currency",
+                "bucket_isUnlimited_currency": false,
+
+                //"bucket_usageType_sms": "",
+                //"bucket_initialBalance_sms": "",
+                //"bucketBalance_remainingBalanceAmount_sms": "",
+                //"bucket_name_sms": "",
+                //"bucket_isUnlimited_sms": false,
+
+                "tenant_schemaLocation": "urn:wom:UsageConsumption:/schema/2.0.0"
+            })
+            break;
+            
         
         //Data-voice-currency-sms    
         case '56998125585':
