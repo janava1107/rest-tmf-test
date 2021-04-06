@@ -10,6 +10,7 @@ class Server {
         this.consultaconsumoPath    = '/bff/consultaconsumo';
         this.consultaboletacicloPath    = '/bff/consultaboletaciclo';
         this.otaPath    = '/bff/ota';
+        this.consultaroamingPath    = '/bff/consultaroaming';
         //middlewares
         this.middlewares();
 
@@ -30,6 +31,7 @@ class Server {
         this.app.use(this.consultaconsumoPath,require ('../routes/consultaconsumo.routes'));
         this.app.use(this.consultaboletacicloPath,require ('../routes/consultaboletaciclo.routes'));
         this.app.use(this.otaPath,require ('../routes/ota.routes'));
+        this.app.use(this.consultaroamingPath,require ('../routes/roaming.routes'));
     
     }
 

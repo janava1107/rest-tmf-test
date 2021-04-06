@@ -10,7 +10,7 @@ const otaGet = (req, res) => {
 }
 
 const otaPost = (req, res) => {
-    console.log('welcomepost');
+    console.log('otapost');
     const {sn} = req.body;
     const {token} =req.headers;
     const AuthStr = 'Bearer '+token;
