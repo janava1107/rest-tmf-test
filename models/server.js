@@ -11,6 +11,8 @@ class Server {
         this.consultaboletacicloPath    = '/bff/consultaboletaciclo';
         this.otaPath    = '/bff/ota';
         this.consultaroamingPath    = '/bff/consultaroaming';
+        this.validaextrasaldoPath    = '/bff/validaextrasaldo';
+        this.activaextrasaldoPath    = '/bff/activaextrasaldo';
         //middlewares
         this.middlewares();
 
@@ -32,6 +34,8 @@ class Server {
         this.app.use(this.consultaboletacicloPath,require ('../routes/consultaboletaciclo.routes'));
         this.app.use(this.otaPath,require ('../routes/ota.routes'));
         this.app.use(this.consultaroamingPath,require ('../routes/roaming.routes'));
+        this.app.use(this.validaextrasaldoPath,require ('../routes/validaextrasaldo.routes'));
+        this.app.use(this.activaextrasaldoPath,require ('../routes/activaextrasaldo.routes'));
     
     }
 
