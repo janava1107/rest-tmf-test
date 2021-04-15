@@ -13,6 +13,7 @@ class Server {
         this.consultaroamingPath    = '/bff/consultaroaming';
         this.validaextrasaldoPath    = '/bff/validaextrasaldo';
         this.activaextrasaldoPath    = '/bff/activaextrasaldo';
+        this.consultapinpukPath    = '/bff/consultapinpuk';
         //middlewares
         this.middlewares();
 
@@ -36,6 +37,7 @@ class Server {
         this.app.use(this.consultaroamingPath,require ('../routes/roaming.routes'));
         this.app.use(this.validaextrasaldoPath,require ('../routes/validaextrasaldo.routes'));
         this.app.use(this.activaextrasaldoPath,require ('../routes/activaextrasaldo.routes'));
+        this.app.use(this.consultapinpukPath,require ('../routes/consultapinpuk.routes'));
     
     }
 
