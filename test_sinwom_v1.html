@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+	
+		<!--<meta name="viewport" content="width-device-width, initial-scale=1, charset=UTF-8" >-->
+		<script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
+	</head>
+
+	<style>
+		df-messenger {
+		--df-messenger-bot-message: #878fac;
+		--df-messenger-button-titlebar-color: #df9b56;
+		--df-messenger-chat-background-color: #fafafa;
+		--df-messenger-font-color: white;
+		--df-messenger-send-icon: #878fac;
+		--df-messenger-user-message: #479b3d;
+		}
+	</style>
+
+	<body>
+
+
+		<df-messenger
+			df-cx="true"
+			location="us-central1"
+			chat-title="web-javito"
+			agent-id="728cc745-8f1f-4a98-92a4-16e0e8710417"
+			language-code="es">
+		</df-messenger>
+
+		
+		<script>
+			window.addEventListener('dfMessengerLoaded', function (event) {
+				const dfMessenger = document.querySelector('df-messenger');
+
+				const payload = [
+									{
+										"title": "Contratar Móvil o producto Hogar",
+										"type": "list",
+										"event": {
+										"languageCode": "es",
+										"name": "contratar"
+										}
+									},
+									{
+										"type": "divider"
+									},
+									{
+										"type": "list",
+										"title": "Equipos",
+										"event": {
+										"languageCode": "es",
+										"name": "equipos"
+										}
+									},
+									{
+										"type": "divider"
+									},
+									{
+										"event": {
+										"name": "boleta-navegacion",
+										"languageCode": "es"
+										},
+										"type": "list",
+										"title": "Boleta y Navegación"
+									}
+								];
+				
+				
+				const openText = ('Bienvenid@! Soy WOMex tu asistente virtual!');
+				dfMessenger.renderCustomText(openText);
+				
+				dfMessenger.renderCustomCard(payload);
+			});		
+		</script>	
+
+
+
+	</body>
+
+
+
+
+
+
+
+
+
+	

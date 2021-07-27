@@ -18,29 +18,6 @@ const validaExtrasaldoPost = (req, res) => {
             )
             break;
             
-        case '56933118533':
-            res.json(
-                {
-                    "status": true, 
-                }
-            )
-            break;    
-        
-        case '56961324725':
-            res.json(
-                {
-                    "status": true, 
-                }
-            )
-            break;  
-            
-        case '56922033837':
-            res.json(
-                {
-                    "status": false, 
-                }
-            )
-            break;    
 
         default:    
             res.json(
